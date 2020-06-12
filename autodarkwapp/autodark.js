@@ -1,0 +1,1 @@
+setTimeout(() => {document.querySelectorAll('body')[0].className += ' dark';void(0); }, 2000)
