@@ -1,8 +1,7 @@
-const sleep = setInterval(()=>{
-    const body=document.querySelectorAll("web");
-    if (body){
-        document.querySelectorAll('body')[0].className += ' dark';
-        void(0);
-        break
-    }
-1000})
+var body=document.querySelectorAll("web");
+while(!body){
+    setTimeout(()=>{
+        body=document.querySelectorAll("web");
+    }, 1000);
+}
+document.querySelectorAll('body')[0].className += ' dark';
